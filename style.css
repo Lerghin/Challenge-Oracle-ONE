@@ -1,0 +1,229 @@
+
+*{
+
+padding: 0;
+margin: 0;
+background-color: #E5E5E5;
+color: white;
+
+}
+
+
+img[id="a"]{
+    display:flex;
+    flex: wrap ;
+position: absolute;
+left: 6.67%;
+right: 37.43%;
+top: 10%;
+bottom: 0%;
+
+
+}
+
+h1{
+
+
+  display: flex;
+flex: wrap; 
+position: absolute;
+width: 577px;
+height: 48px;
+left: 190px;
+top: 210px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 150%;
+
+
+color: #0A3871;
+}
+
+p{
+
+    display: flex;
+    flex: wrap;  
+width: 210px;
+height: 18px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 150%;
+margin-top: 700px;
+margin-left: 210px;
+/* identical to box height, or 18px */
+
+
+/* Gray/gray-400 */
+
+color: #495057;
+
+opacity: 0.8;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+ 
+
+}
+
+/* Auto layout */
+button[id="1"]{
+display: flex;
+flex-direction: row;
+justify-content: center;
+padding: 24px;
+gap: 8px;
+margin-top: 50px;
+width: 328px;
+height: 67px;
+
+margin-left: 190px;
+/* Dark blue/dark-blue-300 */
+
+background: #0A3871;
+border-radius: 24px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+button[id="2"]{
+
+
+box-sizing: border-box;
+
+/* Auto layout */
+position: absolute;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: center;
+padding: 24px;
+gap: 8px;
+text-align: center;
+margin-left: 550px;
+width: 328px;
+height: 67px;
+top: 770px;
+color:#495057;
+/* Light gray */
+
+background: #D8DFE8;
+/* Dark blue/dark-blue-300 */
+
+border: 1px solid #0A3871;
+border-radius: 24px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+textarea[id="encript"]{
+
+
+
+background: #FFFFFF;
+/* shadow */
+
+box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+border-radius: 32px;
+
+
+
+/* Frame 5 */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+position: absolute;
+width: 336px;
+height: 850px;
+left: 900px;
+top: 20px;
+
+
+
+
+}
+img[id="muñeco"]{
+    display: flex;
+    flex: wrap;
+    background: #FFFFFF;
+    position: absolute;
+    width: 300px;
+    height: 304px;
+    left: 920px;
+    top: 243px;
+    
+
+
+}
+h2{
+    display: flex;
+    flex: wrap;
+    position: absolute;
+    width: 320px;
+    height: 30px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    margin-left: 910px;
+   top:550px;
+    background-color: white;
+    /* or 29px */
+    
+    text-align: center;
+    
+    /* Gray/gray-500 */
+    
+    color: #343A40;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0
+
+
+}
+span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    gap: 16px;
+    color:#343A40;
+   text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    background-color: white;
+    position: absolute;
+    width: 300px;
+    height: 122px;
+    left: 920px;
+    top: 619px;
+
+}

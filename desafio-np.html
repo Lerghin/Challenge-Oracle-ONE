@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Encriptador</title>
+	<link rel="stylesheet" href="./style2.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+	<header class="col-xl-6 col-sm-6 col-md-6 col-lg-6 col-s-12">
+
+<img id="a" src="./descarga.png" alt="logo" class="col-12">
+</header>
+<div id="ingresar" class="col-xl-6 col-sm-6 col-md-6 col-lg-6 col-s-12 col-xs-12">
+<h1>Ingrese el texto aqui</h1>
+<input type="text" id="texto"/>
+
+
+<p><img src="./!.png" alt=""> Solo letras minusculas sin acento</p>
+</div>
+<div class="col-xl-6 col-sm-6 col-md-6 col-lg-6 col-s-12 col-xs-12" id="botones">
+<button id="encriptar" >Encriptar</button>
+
+<button id="desencriptar">Desencriptar</button>
+</div>
+
+<aside class="col-xl-2 col-md-2 col-l-2 col-s-12 col-xs-12">
+<input name="encript" id="encript" cols="30" rows="10" >
+
+
+<button id="copiar">Copiar</button>
+</aside>
+
+
+<script>
+
+	
+
+
+
+let nada= document.querySelector("#encript").value;
+if(nada== 0){
+	nada.innerHTML="hola";
+	
+}
+
+
+function encriptar (){
+    let texto = document.querySelector("#texto").value;
+    let textoCifrado = texto.replace(/e/gi, "enter").replace(/i/gi, "imes").replace(/a/gi, "ai").replace(/o/gi, "ober").replace(/u/gi, "ufat");
+    document.querySelector("#encript").value = textoCifrado;
+    document.querySelector("#texto").value;
+	
+    }
+
+	let boton1 = document.querySelector("#encriptar"); boton1.onclick = encriptar;
+
+function desencriptar(){
+	let texto = document.querySelector("#texto").value;
+	let desencriptar=texto.replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ai/gi, "a").replace(/ober/gi, "o").replace(/ufat/gi, "u");
+	document.querySelector("#encript").value = desencriptar;
+	document.querySelector("#texto").value;
+}
+
+let boton2 = document.querySelector("#desencriptar"); boton2.onclick = desencriptar;
+		
+function copiarAlPortapeles(texto) {
+            if (typeof texto != 'string') {
+                throw TypeError('El argumento debe ser una cadena de caracteres.');
+            }
+
+            let areaTexto = document.createElement('textarea');
+            areaTexto.value = texto;
+            areaTexto.setAttribute('readonly', '');
+            areaTexto.style.position = 'absolute';
+            areaTexto.style.left = '-9999px';
+
+            document.body.appendChild(areaTexto);
+
+            let seleccionado = document.getSelection().rangeCount > 0 ? document.getSelection().getRangeAt(0) : false;
+
+            areaTexto.select();
+
+            document.execCommand('copy');
+
+            document.body.removeChild(areaTexto);
+
+            if (seleccionado) {
+                document.getSelection().removeAllRanges();
+                document.getSelection().addRange(seleccionado);
+            }
+        }
+        
+        window.onload = function() {
+            document.getElementById('copiar').addEventListener('click', () => {
+                let contenido = document.getElementById('encript').value;
+
+                copiarAlPortapeles(contenido);
+            });
+        }
+
+
+
+
+
+</script>
+
+
+
+	
+</body>
+</html>

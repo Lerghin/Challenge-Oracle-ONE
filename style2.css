@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mynerve', cursive;
+    background-color: black;
+    color:greenyellow;
+    background-image: url("./fodo.jpeg");
+    background-repeat: no-repeat; 
+background-position: center center;
+    background-size:auto;
+    }
+header{
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex: wrap;
+}
+div[id="ingresar"]{
+    background-image: none;
+display: flex;
+flex:wrap;
+flex-direction: column;
+gap: 3;
+padding-top: 1rem;
+margin-right: 700px;
+margin-left: 10px;
+text-align: center;
+width:500px;
+
+}
+img,p{
+    background-image: none;
+    display: flex;
+    flex: nowrap;
+    justify-content: center;
+}
+input{
+    background-color: rgb(6, 78, 58);
+    background-image: none;
+padding-top: 10px;
+margin-top:50px;
+border:10px solid yellow;
+border-radius: 60px;
+text-align: center;
+font-size: xx-large;
+height: 400px;
+margin-left: 10px;
+color:azure;
+}
+h1{
+    background-image: none;
+    text-align: center;
+}
+
+div[id="botones"]{
+    background-image: none;
+margin-top: 30px;
+margin-bottom: 20px;
+    display: flex;
+justify-content: space-between;
+margin-right: 700px;
+margin-left: 30px;
+
+}
+button{
+
+margin: 10px;
+width: 200px;
+border-radius: 20px;
+height: 3rem;
+border-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+
+}
+button:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  }
+aside{
+    background-image: none;
+display: flex;
+margin-right: 10px;
+margin-left: 750px;
+bottom: 200px;
+}
+input[id="encript"]{
+display:flex;
+
+position: absolute;
+border: 10px solid #3498db;
+border-radius: 5rem;
+height:38rem;
+width: 28rem;
+top:170px;
+margin-bottom: 10rem;
+text-align: center;
+
+  }
+  button[id="copiar"]{
+
+margin-left: 200px;
+  }
